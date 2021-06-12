@@ -1,6 +1,7 @@
 import React ,{useState} from 'react'
 import {Card,Button} from 'react-bootstrap'
 import ReactStars from "react-rating-stars-component"
+import { Link } from 'react-router-dom'
 
 
 function MovieCard({movie}) {
@@ -9,8 +10,9 @@ function MovieCard({movie}) {
     return (
         <div>
             <Card style={{ width: '18rem',margin:10}}>
-              
+            <Link to={{pathname:`/description/${movie.title}`, state: {movie}}}>          
   <Card.Img style={{borederRadius:'20',width:'100%',height:'25rem'}} variant="top" src={movie.posterUrl} alt='poster'/>
+  </Link>
   <Card.Body>
      <div className="body">
      <ReactStars
@@ -23,7 +25,7 @@ function MovieCard({movie}) {
    />
     <section className="show">
     <Card.Title style={{color:'black'}}>{movie.title}</Card.Title>
-    <Button className="button"  onClick={()=>{show?setShow(false):setShow(true)}} variant="dark">Show more</Button>
+    <Button className="button" variant="dark" onClick={()=>show?setShow(false):setShow(true)}> show more </Button>
     </section>
     </div>
     {show ?

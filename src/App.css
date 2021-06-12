@@ -27,12 +27,23 @@ justify-content: space-around;
   flex-direction:column;
   align-items:center;
   justify-content:center;
+  color: goldenrod;
+  margin-top: 20px;
+  margin-left: 400px;
+}
+.the{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: goldenrod;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .appHeader {
   width: 100%;
   height: 100%;
-  min-height:610px;
+  min-height:580px;
   background-color:black;
   display: flex;
   flex-direction: column;
@@ -50,4 +61,38 @@ justify-content: space-around;
 .textb{
   padding-top: 10px;
 }
+.desc{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bod{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body>p{
+  color:white;
+  padding-left: 100px;
+  padding-right: 200px;
+  font-size: large;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.back{
+  margin-left: 990px;
+}
 
+.tit{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h4{
+  color: goldenrod;
+}

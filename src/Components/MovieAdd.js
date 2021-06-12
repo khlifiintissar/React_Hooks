@@ -13,7 +13,7 @@ function MovieAdd({add}) {
   
     return (
       <>
-        <Button variant="success" onClick={handleShow}>
+        <Button variant="warning" onClick={handleShow}>
           click to add a new movie
         </Button>
   
@@ -25,8 +25,9 @@ function MovieAdd({add}) {
               <label>Title</label> <input name='title' onChange={handleAdd} type="text" placeholder="Movie's title"></input><br></br>
               <label>Genre</label> <input name='genre' onChange={handleAdd} type="text" placeholder="Drama,Comedy...."></input><br></br>
               <label>synopsis</label> <input name='synopsis' onChange={handleAdd} type="text" placeholder="descrption or summary.."></input><br></br>
-              <label>Poster</label><input name='posterUrl'onChange={handleAdd} type="url" placeholder="poster url..."></input><br></br>
+              <label>Poster</label><input name='posterUrl'onChange={handleAdd} type="url" placeholder="post url..."></input><br></br>
               <label>Rate</label><input name='rate'onChange={handleAdd} type="number" placeholder="rating.."></input><br></br>
+              <label>Trailer</label><input name='trailer'onChange={handleAdd} type="url" placeholder="post url.."></input>
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
